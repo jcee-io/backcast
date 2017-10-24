@@ -9,6 +9,7 @@
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/underscore/underscore.js"></script>
   <script src="node_modules/backbone/backbone.js"></script>
+  
 </head>
 <body>
   <div id="app">
@@ -27,11 +28,24 @@
   <script src="src/views/videoList.js"></script>
   <script src="src/views/videoListEntry.js"></script>
   <script src="src/views/videoPlayer.js"></script>
-
+  <script src="src/data/exampleVideoData.js"></script>
   <script>
     backboneReady(() => {
-      new AppView();
+
+      let view = new AppView();
+      
+      //view.list.render();
+      view.render();
+
+      $('#app').html(view.$el);
+
+      // view.list.render();
+
+      // $('.video-list').html(view.list.$el);
+      
     });
+
+      
   </script>
 
 </body>
