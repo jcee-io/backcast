@@ -3,7 +3,7 @@
 var AppView = Backbone.View.extend({
   el: '#app',
   events: {
-    'click #submit' : 'handleClick'
+    'click #submit': 'handleClick'
   }, 
   initialize: function() {
     

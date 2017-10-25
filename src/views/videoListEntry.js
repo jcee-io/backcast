@@ -7,13 +7,13 @@ var VideoListEntryView = Backbone.View.extend({
   render: function() {
     var html = [
       '<div class="video-list-entry media">',
-        '<div class="media-left">',
-          '<img class="media-object" src="' + this.model.attributes.thumbnail + '" />',
-        '</div>',
-        '<div class="media-body">',
-        '<div value="' + this.model.attributes.url + '" class="video-list-entry-title">' + this.model.attributes.title + '</div>',
-            '<div class="video-list-entry-detail">' + this.model.attributes.description + '</div>',
-        '</div>',
+      '<div class="media-left">',
+      '<img class="media-object" src="' + this.model.attributes.thumbnail + '" />',
+      '</div>',
+      '<div class="media-body">',
+      '<div value="' + this.model.attributes.url + '" class="video-list-entry-title">' + this.model.attributes.title + '</div>',
+      '<div class="video-list-entry-detail">' + this.model.attributes.description + '</div>',
+      '</div>',
       '</div>'
     ].join('');
 
