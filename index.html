@@ -29,21 +29,9 @@
   <script src="src/views/videoListEntry.js"></script>
   <script src="src/views/videoPlayer.js"></script>
   <script src="src/data/exampleVideoData.js"></script>
+  <script src="src/config/youtube.js"></script>
   <script>
-    backboneReady(() => {
-
-      let view = new AppView();
-      
-      //view.list.render();
-      view.render();
-
-      $('#app').html(view.$el);
-
-      // view.list.render();
-
-      // $('.video-list').html(view.list.$el);
-      
-    });
+    backboneReady(() => { new AppView(); });
 
       
   </script>
